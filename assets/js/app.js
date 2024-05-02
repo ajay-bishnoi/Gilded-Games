@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000);
   });
 });
+// ---------------- AOs--------------------//
+AOS.init({
+  duration: 2000,
+  once: true,
+});
 // --------- accordion --------- //
 const activeAccordion = document.querySelectorAll(".accordion-Item");
 activeAccordion.forEach((item) => {

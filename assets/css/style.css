@@ -1,10 +1,5 @@
 @import url("./root.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
@@ -35,28 +30,7 @@ body {
 .ff-Montserrat {
   font-family: "Montserrat", sans-serif;
 }
-.ff-roboto {
-  font-family: "Roboto", sans-serif;
-}
-.ff-rubik {
-  font-family: "Rubik", sans-serif;
-}
-.ff-wrksans {
-  font-family: "Work Sans", sans-serif;
-}
-.ff-sedan {
-  font-family: "Sedan", serif;
-}
-.ff-plus-Jakarta {
-  font-family: Plus Jakarta Sans;
-}
-@font-face {
-  font-family: "Helvetica";
-  src: url(./font/Helvetica/Helvetica.ttf);
-}
-.ff_Helvetica {
-  font-family: "Helvetica";
-}
+
 /* ----------------------font weight------- */
 .fw-300 {
   font-weight: 300;
@@ -99,16 +73,16 @@ body {
   position: relative;
   transition: 0.5s linear;
   background-size: 300% 100%;
-  background: linear-gradient(149.67deg, #815cc8 29.44%, #1babfe 81.54%);
-  box-shadow: 0px 8px 30px 0px #1babfe;
+  background: var(--blue-pink-gradient);
+  box-shadow: 0px 8px 30px 0px var(--blue);
 }
 .h-96 {
   height: 96px;
 }
 .discordBtn:hover {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
   background: transparent;
-  color: #00141b;
+  color: var(--blk-014b);
 }
 .headerbg-image {
   background-image: url("../img/png/header-bg.webp");
@@ -143,10 +117,10 @@ body {
   background: transparent;
   z-index: 0;
   border: 0;
-  box-shadow: 0px 8px 30px 0px #1babfe;
+  box-shadow: 0px 8px 30px 0px var(--blue);
 }
 .bg-btn-gradient2 {
-  background: linear-gradient(90deg, #815cc8 0%, #1babfe 100%);
+  background: var(--blue-pink-gradient3);
 }
 .PresaleBtn::after {
   content: "";
@@ -155,7 +129,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background: linear-gradient(90deg, #815cc8 0%, #1babfe 100%);
+  background: var(--blue-pink-gradient3);
   z-index: -2;
   opacity: 1;
   transition: all 300ms linear;
@@ -181,9 +155,9 @@ body {
   bottom: 0;
   border-radius: 30px;
   border: 1px solid transparent;
-  background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%) border-box;
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  background: var(--white-gradient);
+  -webkit-mask: var(--white-gradient2);
+  mask: var(--white-gradient2);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   opacity: 1;
@@ -193,8 +167,8 @@ body {
   position: relative;
   padding: 14px 34px;
   border-radius: 79px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid var(--white);
+  color: var(--white);
   transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
   cursor: pointer;
   user-select: none;
@@ -211,7 +185,7 @@ body {
 }
 
 .joinNow:hover {
-  color: #ffffff !important;
+  color: var(--white) !important;
   transition-delay: 0.5s;
   border: 1px solid transparent;
 }
@@ -221,10 +195,10 @@ body {
   border-radius: 79px;
 }
 .joinNow:hover:after {
-  background: linear-gradient(90deg, #815cc8 0%, #1babfe 100%);
+  background: var(--blue-pink-gradient3);
   transition-delay: 0.35s;
   border-radius: 79px;
-  box-shadow: 0px 8px 30px 0px #1babfe;
+  box-shadow: 0px 8px 30px 0px var(--blue);
 }
 
 .from_center {
@@ -247,7 +221,7 @@ body {
   left: 0;
   height: 0;
   width: 100%;
-  background: linear-gradient(90deg, #815cc8 0%, #1babfe 100%);
+  background: var(--blue-pink-gradient3);
   border-radius: 79px;
 }
 
@@ -295,8 +269,7 @@ body {
   height: 561px;
   padding: 5px;
   border-radius: 13px;
-  background: linear-gradient(90deg, #815cc8 0%, #1babfe 100%) padding-box,
-    linear-gradient(90deg, transparent, transparent) border-box;
+  background: var(--blue-pink-gradient3);
 }
 .gif-img img {
   border-radius: 13px;
@@ -376,14 +349,12 @@ body {
   max-width: 312px;
   border-radius: 13px;
   border: 1px solid transparent;
-  background: linear-gradient(#201f1f, #100f0f) padding-box,
-    linear-gradient(180deg, #464545, #282727) border-box;
+  background: var(--gray-blk-gradient);
   transition: all 300ms linear;
 }
 .token-card:hover {
-  box-shadow: 0px 8px 30px 0px #1babfe;
-  background: linear-gradient(#815cc8, #1babfe) padding-box,
-    linear-gradient(180deg, #9a7dd3, #33b4fe) border-box;
+  box-shadow: 0px 8px 30px 0px var(--blue);
+  background: var(--blue-pink-gradient2);
 }
 
 /* ------------------------Buy On Uniswap------------------- */
@@ -423,7 +394,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50px;
-  background: white;
+  background: var(--white);
 }
 .loot-layer {
   right: 0;
@@ -453,7 +424,7 @@ body {
   width: 3px;
   height: 3px;
   border-radius: 50px;
-  background: #b2b2b2;
+  background: var(--white-gray);
 }
 .mb-12 {
   margin-bottom: 12px;
@@ -469,7 +440,7 @@ body {
   content: " ";
   width: 81%;
   height: 2px;
-  background: #333333;
+  background: var(--blk-33);
   position: absolute;
   top: 31px;
   left: 0;
@@ -484,13 +455,13 @@ body {
   border-radius: 50%;
   z-index: 1;
   position: absolute;
-  box-shadow: 0px 0px 63.22px 0px #1babfe;
-  background: linear-gradient(90deg, #815cc8 0%, #1babfe 100%);
+  box-shadow: 0px 0px 63.22px 0px var(--blue);
+  background: var(--blue-pink-gradient3);
 }
 .timeline-Section > :last-child::before {
   content: "";
   width: 100%;
-  border-top: 2px dashed #ffffff;
+  border-top: 2px dashed var(--white);
   top: 31px;
   right: -82%;
   position: absolute;
@@ -505,8 +476,7 @@ body {
   padding: 0 19px;
   border-radius: 24px;
   border: 1px solid transparent;
-  background: linear-gradient(#201f1f, #100f0f) padding-box,
-    linear-gradient(180deg, #464545, #282727) border-box;
+  background: var(--gray-blk-gradient);
   transition: all 300ms linear;
   cursor: pointer;
 }
@@ -515,9 +485,8 @@ body {
   height: 100%;
 }
 .powered-card:hover {
-  box-shadow: 0px 8px 30px 0px #1babfe;
-  background: linear-gradient(#815cc8, #1babfe) padding-box,
-    linear-gradient(180deg, #9a7dd3, #33b4fe) border-box;
+  box-shadow: 0px 8px 30px 0px var(--blue);
+  background: var(--blue-pink-gradient2);
 }
 .py-58-326 {
   padding: 58px 0 326px;
@@ -549,8 +518,7 @@ body {
   margin-bottom: 0;
 }
 .accordion-Item {
-  background: linear-gradient(#121516 0 0) padding-box,
-    linear-gradient(180deg, #343838, #25292a) border-box;
+  background: var(--gray-blk-gradient2);
   border: 1px solid transparent;
   border-radius: 6px;
   position: relative;
@@ -607,13 +575,12 @@ body {
   width: 31.21px;
   height: 31.21px;
   border: 0.78px solid transparent;
-  background: linear-gradient(#201f1f, #100f0f) padding-box,
-    linear-gradient(180deg, #464545, #282727) border-box;
+  background: var(--gray-blk-gradient);
   transition: all 300ms linear;
 }
 .icon-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 7px #ffffff;
+  box-shadow: 0 4px 7px var(--white);
 }
 .max-367 {
   max-width: 367px;
@@ -630,10 +597,10 @@ body {
 .line1 {
   height: 35px;
   width: 1px;
-  background: #999999;
+  background: var(--pink-gray);
 }
 .footerline {
-  border-top: 1px solid #191919;
+  border-top: 1px solid var(--blk-19);
 }
 .foot-item {
   transition: all 300ms linear;
@@ -670,17 +637,7 @@ body {
 .opacity_1 {
   opacity: 1;
 }
-/* ---ellips--- */
-.ellips {
-  width: 489.1px;
-  height: 476.41px;
-  top: 31%;
-  right: -12%;
-  filter: blur(132px);
-  z-index: -3;
-  position: absolute;
-  background: rgba(22, 115, 255, 0.3);
-}
+
 /* -------------------back-to-top----------- */
 .backtop {
   position: fixed;
@@ -728,7 +685,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #020d15;
+  background-color: var(--d-blue);
   display: flex;
   justify-content: center;
   align-items: center;

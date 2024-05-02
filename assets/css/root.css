@@ -16,11 +16,33 @@
   --fs-72: 72px;
   /* clr */
   --white: #ffffff;
+  --white-gray: #b2b2b2;
   --black: #000000;
   --blue: #1babfe;
+  --d-blue: #020d15;
+  --blk-19: #191919;
+  --blk-33: #333333;
+  --blk-014b: #00141b;
+  --pink-gray: #999999;
   /* ~~ */
-  --brown-blk-gradient: linear-gradient(to right, #0b0803, #0b0803) padding-box,
-    linear-gradient(to right, #514634, #4d3e1f) border-box;
+  --blue-pink-gradient3: linear-gradient(90deg, #815cc8 0%, #1babfe 100%);
+  --blue-pink-gradient: linear-gradient(
+    149.67deg,
+    #815cc8 29.44%,
+    #1babfe 81.54%
+  );
+  --white-gradient: linear-gradient(90deg, #ffffff 0%, #ffffff 100%) border-box;
+  --white-gradient2: linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  --blue-pink-gradient3: linear-gradient(90deg, #815cc8 0%, #1babfe 100%)
+      padding-box,
+    linear-gradient(90deg, transparent, transparent) border-box;
+  --blue-pink-gradient2: linear-gradient(#815cc8, #1babfe) padding-box,
+    linear-gradient(180deg, #9a7dd3, #33b4fe) border-box;
+  --gray-blk-gradient: linear-gradient(#201f1f, #100f0f) padding-box,
+    linear-gradient(180deg, #464545, #282727) border-box;
+  --gray-blk-gradient2: linear-gradient(#121516 0 0) padding-box,
+    linear-gradient(180deg, #343838, #25292a) border-box;
 }
 /*--------------------------- clr --------------- */
 .clr-black {
@@ -41,7 +63,7 @@
 }
 /* ------------------clr gradient--------------- */
 .clr-gradient {
-  background: linear-gradient(90deg, #815cc8 0%, #1babfe 100%) !important;
+  background: var(--blue-pink-gradient3) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
@@ -391,7 +413,7 @@
     content: " ";
     width: 2px;
     height: 100%;
-    background: #333333;
+    background: var(--blk-33);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -421,8 +443,8 @@
     border-radius: 50%;
     z-index: 1;
     position: absolute;
-    box-shadow: 0px 0px 29.22px 0px #1babfe;
-    background: linear-gradient(90deg, #815cc8 0%, #1babfe 100%);
+    box-shadow: 0px 0px 29.22px 0px var(--blue);
+    background: var(--blue-pink-gradient3);
   }
 }
 
@@ -589,7 +611,7 @@
     gap: 18px;
   }
   .PresaleBtn {
-    box-shadow: 0 2px 19px 1px #1babfe;
+    box-shadow: 0 2px 19px 1px var(--blue);
   }
   .py-229-228 {
     padding: 70px 0;
