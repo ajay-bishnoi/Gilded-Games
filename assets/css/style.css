@@ -461,7 +461,7 @@ body {
 .timeline-Section > :last-child::before {
   content: "";
   width: 100%;
-  border-top: 2px dashed var(--white);
+  border-top: 2px dashed var(--blk-33);
   top: 31px;
   right: -82%;
   position: absolute;
